@@ -1,0 +1,69 @@
+/* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+}
+
+header {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0 ;
+    box-shadow: 0 2px 4px rgba(0, 0,0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    overflow-y: scroll;
+    height: calc(100vh - 200px); /* Adjust based on your footer and header height */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:2rem;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    text-align: center;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+}
